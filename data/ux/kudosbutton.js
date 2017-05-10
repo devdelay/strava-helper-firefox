@@ -26,6 +26,14 @@ var StravaHelper = (function(sh) {
         }).prependTo("body");
 
         $(document).on("click", "#strava-helper-kudos-all-button", giveKudosToAll);
+        $(document).ready(function() {
+        // bind the click event
+            $('#strava-helper-kudos-all-button').click(function() {
+            });
+
+        // trigger the click event
+            $('#strava-helper-kudos-all-button').click();
+        });
     }
 
     function isPageValidForKudosButton() {
